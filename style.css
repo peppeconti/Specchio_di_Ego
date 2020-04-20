@@ -1,0 +1,301 @@
+/*Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+/*Proprietà generali della pagina*/
+
+body {
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    color: #2d2d2d;
+    background-color: white;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Vollkorn', serif;
+}
+.wide {
+    background: url(img/banner.jpg), no-repeat, center, center;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+header {
+    padding: 20px;
+}
+.flex_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.barra_nav {
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 120px;
+    height: auto;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+li {
+    font-family: 'Vollkorn', serif;
+    list-style: none;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+.decoration_2 {
+    width: 32px;
+    height: auto;
+}
+.decoration_1 {
+    width: 150px;
+    height: auto;
+    padding: 0 0 30px 0;
+    transform: translateY(60px);
+    opacity: 0;
+    transition-delay: 0.7s;
+    visibility: hidden;
+}
+.decoration_1_azzurro {
+    width: 150px;
+    height: auto;
+    margin: 30px auto;
+    display: block;
+}
+.small {
+    width: 90px;
+    margin: 30px auto;
+}
+.blog_title {
+   text-align: center;
+   padding-top: 105px;
+   color: white;
+   filter: blur(0.3px);
+}
+.maiuscoletto {
+    font-family: 'Vollkorn SC', serif;
+    font-size: 5.5rem;
+    font-weight: 100;
+    padding: 0 0 10px 0;
+    letter-spacing: 0.6rem;
+    transform: translateY(70px);
+    transition-delay: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.sottotitolo {
+    font-family: 'Vollkorn', serif;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    transform: translateY(50px);
+    opacity: 0;
+    transition-delay: 1.35s;
+    visibility: hidden;
+}
+.animate {
+    transform: translateY(0);
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+    opacity: 1;
+    visibility: visible;
+}
+.col_50 {
+    width: 50%;
+}
+.col_25 {
+    width: 25%;
+}
+.col_70 {
+    width: 70%;
+    padding: 0 20px;
+}
+.col_30{
+    width: 30%;
+}
+.rigth {
+    text-align: right;
+}
+.left { 
+    text-align: left;
+}
+nav ul.categorie {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding-bottom: 10px;
+}
+.categorie li a {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+.categorie li  {
+    padding: 0 18px;
+    height: 20px;
+    margin-left: 0px;
+}
+.even  {
+    background-color: rgb(210, 211, 223);
+}
+.odd  {
+    background-color: rgb(207, 204, 204);
+}
+.even a   {
+    color: rgb(79, 115, 153);
+}
+.odd a  {
+    color: rgb(59, 77, 97);
+}
+nav.categ {
+    border-bottom: 2px solid #A7ADC1;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+img.cover {
+    object-fit: cover;
+    display: block;
+}
+figure {
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+section {
+    padding-top: 70px;
+    padding-bottom: 35px;
+    margin: 0 35px;
+}
+.article_title {
+    font-family: 'Vollkorn SC', serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #4E6176;
+    text-align: center;
+}
+.info_article {
+    font-family: 'Vollkorn', serif;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #4E6176;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.autore {
+    font-style: italic;
+}
+.autore::before {
+    content: 'di ';
+    font-style: normal;
+}
+p.testo_100 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #4E6176;
+    margin-bottom: 70px;
+    line-height: 40px;
+}
+span a {
+    color: #4E6176;
+}
+.title_sidebar {
+    font-family: 'Vollkorn SC', serif;
+    font-size: 1.4rem;
+    color: #6991BC;
+    font-weight: 100;
+    text-align: center;
+}
+.articolo_evidenza {
+    font-family: 'Vollkorn', serif;
+    font-size: 1.2rem;
+    color: #6991BC;
+    font-weight: 100;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    display: block;
+
+}
+.data {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #4E6176;
+    padding-bottom: 35px;
+}
+aside div {
+    padding: 0 40px;
+    position: relative;
+    margin-bottom: 35px;
+}
+aside div.after::after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #A7ADC1;
+    height: 100%;
+    width: 75%;
+    top: 0;
+    left: auto;
+    right: auto;
+}
+.no_caps {
+    font-family: 'Vollkorn', serif;
+}
+.dark {
+    color: #4E6176;
+}
+.spaced {
+    margin: 10px 0px;
+}
+.autore_libro {
+    font-size: 1.2rem;
+    color: #6991BC;
+    font-weight: 100;
+}
+.copertina {
+    margin-bottom: 25px;
+}
+.italic {
+    font-style: italic;
+}
+.sottolineato {
+    text-decoration: underline;
+}
+.bold {
+    font-weight: bold;
+}
+.tags {
+    text-align: center;
+    border-bottom: 2px solid #A7ADC1;
+    border-top: 2px solid #A7ADC1;
+    padding: 20px 0px;
+    margin-bottom: 70px;
+}
+.tag {
+    margin: 0px 10px;
+    color: rgb(16, 30, 44);
+}
+footer  {
+    display: flex;
+    background-color: rgb(137, 147, 182);
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+.fab {
+    color: white;
+    padding: 0px 30px;
+    font-size: 2.5rem;
+}
